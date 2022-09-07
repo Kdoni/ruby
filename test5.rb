@@ -8,3 +8,4 @@ else
     puts "It's over a 100"
 end
 
+puts 847>"874"
