@@ -4,4 +4,10 @@ family = {
     brothers: ["frank","rob","david"],
     aunts: ["mary","sally","susan"]
 }
-print family.select {|keys,values| keys==:sisters || keys ==:brothers}
+# family.each {|keys,values| puts keys,values}
+
+person ={
+    name: "bob", occupation: "web developer", hobbies: "cringing"
+}
+puts person[:name]
+puts person.key?(:hobbies)
