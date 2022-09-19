@@ -1,0 +1,1 @@
+p (-100..0).map{|x| x}.reverse
