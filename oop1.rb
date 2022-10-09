@@ -24,11 +24,20 @@ class MyCar
     def shut_off
         @speed =0
     end
+    def self.gas_mileage
+        puts "It's old boi"
+    end
+    def to_s
+        "Hello mina-san."
+    end
 end
 
 toyota = MyCar.new(1999,"gray","corolla")
+karapoutza = MyCar.new(1221,"lepr","hi")
 puts toyota.speed_up
 puts toyota.break
 toyota.color = "red"
 puts toyota.color
 toyota.spray_paint("yellow")
+puts toyota
+puts karapoutza
