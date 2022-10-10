@@ -1,3 +1,21 @@
+module Air_Conditioning
+    def cooling
+        puts "It's a bit chillier"
+    end
+end
+class Vehicle
+    @@tracking = 0
+    def self.print_tracking
+        puts @@tracking
+    end
+
+    def initialize
+        @@trakcing +=1
+    end
+    private
+    def age
+end
+    
 class MyCar
     attr_accessor :color
     attr_reader :year
@@ -7,7 +25,7 @@ class MyCar
         @model = model
         @speed = 0
     end
-
+    include Air_Conditioning
     def spray_paint(color)
         self.color =color
         puts "your new #{color} paint looks better than #{@color}"
@@ -31,13 +49,3 @@ class MyCar
         "Hello mina-san."
     end
 end
-
-toyota = MyCar.new(1999,"gray","corolla")
-karapoutza = MyCar.new(1221,"lepr","hi")
-puts toyota.speed_up
-puts toyota.break
-toyota.color = "red"
-puts toyota.color
-toyota.spray_paint("yellow")
-puts toyota
-puts karapoutza
