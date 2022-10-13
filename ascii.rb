@@ -1,0 +1,1 @@
+puts "A".ord.to_s.split("").pop.to_i
