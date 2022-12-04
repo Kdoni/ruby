@@ -13,22 +13,21 @@
 
 # p sum
 
-def euler1(number = 10)
-  if number % 3 == 0
-    next number
+def euler1(number = 0)
+  if (number % 3).zero? || (number % 5).zero?
+    number
   else
-    euler1(number - 1)
+    euler1(number + 1)
   end
 end
 
-euler1
+def getter(number = 0, result = [])
+  while number < 1000
+    kappa = euler1(number)
+    result << kappa
+    number = kappa + 1
+  end
+  result.reduce(&:+)
+end
 
-# def getter(number = 0, result = [])
-#   while euler1 < 10
-#     result << euler1
-#     number += 1
-#   end
-#   result
-# end
-
-# p getter
+p getter
